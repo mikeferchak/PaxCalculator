@@ -1,0 +1,910 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3203BE9F278A6DEB008232C1 /* Solo2022.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BE9E278A6DEB008232C1 /* Solo2022.swift */; };
+		3203BEA0278A6DEB008232C1 /* Solo2022.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BE9E278A6DEB008232C1 /* Solo2022.swift */; };
+		3203BEA3278B98D0008232C1 /* ProSolo2022.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEA2278B98D0008232C1 /* ProSolo2022.swift */; };
+		3203BEA4278B98D0008232C1 /* ProSolo2022.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEA2278B98D0008232C1 /* ProSolo2022.swift */; };
+		3203BEAA278BA0CA008232C1 /* SoloClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEA9278BA0CA008232C1 /* SoloClass.swift */; };
+		3203BEAB278BA0CA008232C1 /* SoloClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEA9278BA0CA008232C1 /* SoloClass.swift */; };
+		3203BEAD278BA0E1008232C1 /* SoloClassGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEAC278BA0E1008232C1 /* SoloClassGroup.swift */; };
+		3203BEAE278BA0E1008232C1 /* SoloClassGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEAC278BA0E1008232C1 /* SoloClassGroup.swift */; };
+		3203BEB0278BA113008232C1 /* ViewMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEAF278BA113008232C1 /* ViewMode.swift */; };
+		3203BEB1278BA113008232C1 /* ViewMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEAF278BA113008232C1 /* ViewMode.swift */; };
+		3203BEB3278BB04B008232C1 /* DirectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEB2278BB04B008232C1 /* DirectView.swift */; };
+		3203BEB4278BB04B008232C1 /* DirectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEB2278BB04B008232C1 /* DirectView.swift */; };
+		3203BEB6278BB169008232C1 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEB5278BB169008232C1 /* ListView.swift */; };
+		3203BEB7278BB169008232C1 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEB5278BB169008232C1 /* ListView.swift */; };
+		3203BEB9278BB29A008232C1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEB8278BB29A008232C1 /* SettingsView.swift */; };
+		3203BEBA278BB29A008232C1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEB8278BB29A008232C1 /* SettingsView.swift */; };
+		3203BEBF278BBD3B008232C1 /* IndexType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEBE278BBD3B008232C1 /* IndexType.swift */; };
+		3203BEC0278BBD3B008232C1 /* IndexType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEBE278BBD3B008232C1 /* IndexType.swift */; };
+		323D9D2027EC197100DE1A6A /* ComplicationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323D9D1F27EC197100DE1A6A /* ComplicationProvider.swift */; };
+		3247ED0A278E2F0700794238 /* ResizablePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247ED09278E2F0700794238 /* ResizablePicker.swift */; };
+		32574BA127EBA4390055C1CF /* ComplicationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32574BA027EBA4390055C1CF /* ComplicationViews.swift */; };
+		32A25C62278BFAAB00AFB9AB /* TimeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A25C61278BFAAB00AFB9AB /* TimeText.swift */; };
+		32C7DE8D271F78C400FB17C2 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C7DE7D271F78C300FB17C2 /* App.swift */; };
+		32C7DE8E271F78C400FB17C2 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C7DE7D271F78C300FB17C2 /* App.swift */; };
+		32C7DE8F271F78C400FB17C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C7DE7E271F78C300FB17C2 /* ContentView.swift */; };
+		32C7DE90271F78C400FB17C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C7DE7E271F78C300FB17C2 /* ContentView.swift */; };
+		32C7DE91271F78C400FB17C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C7DE7F271F78C400FB17C2 /* Assets.xcassets */; };
+		32C7DE92271F78C400FB17C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C7DE7F271F78C400FB17C2 /* Assets.xcassets */; };
+		32D9B57927E3893200E5E555 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D9B57827E3893200E5E555 /* Assets.xcassets */; };
+		32D9B57F27E3893300E5E555 /* PAX calculator watchOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 32D9B57E27E3893300E5E555 /* PAX calculator watchOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		32D9B58427E3893300E5E555 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D9B58327E3893300E5E555 /* ContentView.swift */; };
+		32D9B58627E3893300E5E555 /* PAX_calculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D9B58527E3893300E5E555 /* PAX_calculatorApp.swift */; };
+		32D9B58827E3893300E5E555 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D9B58727E3893300E5E555 /* ComplicationController.swift */; };
+		32D9B58A27E3893300E5E555 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D9B58927E3893300E5E555 /* Assets.xcassets */; };
+		32D9B58D27E3893300E5E555 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D9B58C27E3893300E5E555 /* Preview Assets.xcassets */; };
+		32D9B59127E3893300E5E555 /* PAX.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 32D9B57627E3893200E5E555 /* PAX.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		32D9B59927E3898200E5E555 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32599B1E27D94F0B00EE2FF5 /* ListView.swift */; };
+		32D9B59A27E3898400E5E555 /* TimeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B4106227E2C57B00DD9F50 /* TimeInputView.swift */; };
+		32D9B59B27E38A0300E5E555 /* TimeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A25C61278BFAAB00AFB9AB /* TimeText.swift */; };
+		32D9B59C27E38A0F00E5E555 /* SoloClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEA9278BA0CA008232C1 /* SoloClass.swift */; };
+		32D9B59D27E38A0F00E5E555 /* SoloClassGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEAC278BA0E1008232C1 /* SoloClassGroup.swift */; };
+		32D9B59F27E38A0F00E5E555 /* IndexType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEBE278BBD3B008232C1 /* IndexType.swift */; };
+		32D9B5A027E38A0F00E5E555 /* Solo2022.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BE9E278A6DEB008232C1 /* Solo2022.swift */; };
+		32D9B5A127E38A0F00E5E555 /* ProSolo2022.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEA2278B98D0008232C1 /* ProSolo2022.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32D9B58027E3893300E5E555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32C7DE78271F78C300FB17C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D9B57D27E3893300E5E555;
+			remoteInfo = "PAX calculator watchOS WatchKit Extension";
+		};
+		32D9B58F27E3893300E5E555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32C7DE78271F78C300FB17C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D9B57527E3893200E5E555;
+			remoteInfo = "PAX calculator watchOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		32599B1D27D94D7700EE2FF5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				32D9B59127E3893300E5E555 /* PAX.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D9B59527E3893300E5E555 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				32D9B57F27E3893300E5E555 /* PAX calculator watchOS WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3203BE9E278A6DEB008232C1 /* Solo2022.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solo2022.swift; sourceTree = "<group>"; };
+		3203BEA2278B98D0008232C1 /* ProSolo2022.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProSolo2022.swift; sourceTree = "<group>"; };
+		3203BEA9278BA0CA008232C1 /* SoloClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloClass.swift; sourceTree = "<group>"; };
+		3203BEAC278BA0E1008232C1 /* SoloClassGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloClassGroup.swift; sourceTree = "<group>"; };
+		3203BEAF278BA113008232C1 /* ViewMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMode.swift; sourceTree = "<group>"; };
+		3203BEB2278BB04B008232C1 /* DirectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectView.swift; sourceTree = "<group>"; };
+		3203BEB5278BB169008232C1 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		3203BEB8278BB29A008232C1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3203BEBE278BBD3B008232C1 /* IndexType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexType.swift; sourceTree = "<group>"; };
+		3203BEC4278BED21008232C1 /* PAX-calculator--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PAX-calculator--iOS--Info.plist"; sourceTree = "<group>"; };
+		323D9D1F27EC197100DE1A6A /* ComplicationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationProvider.swift; sourceTree = "<group>"; };
+		3247ED09278E2F0700794238 /* ResizablePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizablePicker.swift; sourceTree = "<group>"; };
+		32574BA027EBA4390055C1CF /* ComplicationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationViews.swift; sourceTree = "<group>"; };
+		32599B1E27D94F0B00EE2FF5 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		32A25C61278BFAAB00AFB9AB /* TimeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeText.swift; sourceTree = "<group>"; };
+		32B4106227E2C57B00DD9F50 /* TimeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInputView.swift; sourceTree = "<group>"; };
+		32C7DE7D271F78C300FB17C2 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		32C7DE7E271F78C300FB17C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		32C7DE7F271F78C400FB17C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32C7DE84271F78C400FB17C2 /* PAX calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PAX calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32C7DE8A271F78C400FB17C2 /* PAX calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PAX calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32C7DE8C271F78C400FB17C2 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		32D9B57627E3893200E5E555 /* PAX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D9B57827E3893200E5E555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32D9B57E27E3893300E5E555 /* PAX calculator watchOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PAX calculator watchOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D9B58327E3893300E5E555 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		32D9B58527E3893300E5E555 /* PAX_calculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAX_calculatorApp.swift; sourceTree = "<group>"; };
+		32D9B58727E3893300E5E555 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		32D9B58927E3893300E5E555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32D9B58C27E3893300E5E555 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		32D9B58E27E3893300E5E555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F4C12F278A544A006FFEE2 /* PAX calculator (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PAX calculator (iOS).entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32C7DE81271F78C400FB17C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32C7DE87271F78C400FB17C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D9B57B27E3893300E5E555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3203BEA1278B8D5D008232C1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3203BE9E278A6DEB008232C1 /* Solo2022.swift */,
+				3203BEA2278B98D0008232C1 /* ProSolo2022.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3203BEA8278BA0BC008232C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3203BEA9278BA0CA008232C1 /* SoloClass.swift */,
+				3203BEAC278BA0E1008232C1 /* SoloClassGroup.swift */,
+				3203BEAF278BA113008232C1 /* ViewMode.swift */,
+				3203BEBE278BBD3B008232C1 /* IndexType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32A25C60278BFA9800AFB9AB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				32A25C61278BFAAB00AFB9AB /* TimeText.swift */,
+				3247ED09278E2F0700794238 /* ResizablePicker.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		32C7DE77271F78C300FB17C2 = {
+			isa = PBXGroup;
+			children = (
+				3203BEC4278BED21008232C1 /* PAX-calculator--iOS--Info.plist */,
+				32F4C12F278A544A006FFEE2 /* PAX calculator (iOS).entitlements */,
+				32C7DE7C271F78C300FB17C2 /* Shared */,
+				32C7DE8B271F78C400FB17C2 /* macOS */,
+				32D9B57727E3893200E5E555 /* PAX calculator watchOS */,
+				32D9B58227E3893300E5E555 /* PAX calculator watchOS WatchKit Extension */,
+				32C7DE85271F78C400FB17C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32C7DE7C271F78C300FB17C2 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				32A25C60278BFA9800AFB9AB /* Helpers */,
+				3203BEA8278BA0BC008232C1 /* Model */,
+				3203BEA1278B8D5D008232C1 /* Data */,
+				32C7DE7D271F78C300FB17C2 /* App.swift */,
+				32C7DE7E271F78C300FB17C2 /* ContentView.swift */,
+				3203BEB2278BB04B008232C1 /* DirectView.swift */,
+				32C7DE7F271F78C400FB17C2 /* Assets.xcassets */,
+				3203BEB5278BB169008232C1 /* ListView.swift */,
+				3203BEB8278BB29A008232C1 /* SettingsView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		32C7DE85271F78C400FB17C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32C7DE84271F78C400FB17C2 /* PAX calculator.app */,
+				32C7DE8A271F78C400FB17C2 /* PAX calculator.app */,
+				32D9B57627E3893200E5E555 /* PAX.app */,
+				32D9B57E27E3893300E5E555 /* PAX calculator watchOS WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C7DE8B271F78C400FB17C2 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				32C7DE8C271F78C400FB17C2 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		32D9B57727E3893200E5E555 /* PAX calculator watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				32D9B57827E3893200E5E555 /* Assets.xcassets */,
+			);
+			path = "PAX calculator watchOS";
+			sourceTree = "<group>";
+		};
+		32D9B58227E3893300E5E555 /* PAX calculator watchOS WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				32B4106227E2C57B00DD9F50 /* TimeInputView.swift */,
+				32599B1E27D94F0B00EE2FF5 /* ListView.swift */,
+				32D9B58327E3893300E5E555 /* ContentView.swift */,
+				32D9B58527E3893300E5E555 /* PAX_calculatorApp.swift */,
+				323D9D1F27EC197100DE1A6A /* ComplicationProvider.swift */,
+				32D9B58727E3893300E5E555 /* ComplicationController.swift */,
+				32574BA027EBA4390055C1CF /* ComplicationViews.swift */,
+				32D9B58927E3893300E5E555 /* Assets.xcassets */,
+				32D9B58E27E3893300E5E555 /* Info.plist */,
+				32D9B58B27E3893300E5E555 /* Preview Content */,
+			);
+			path = "PAX calculator watchOS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		32D9B58B27E3893300E5E555 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				32D9B58C27E3893300E5E555 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32C7DE83271F78C400FB17C2 /* PAX calculator (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32C7DE95271F78C400FB17C2 /* Build configuration list for PBXNativeTarget "PAX calculator (iOS)" */;
+			buildPhases = (
+				32C7DE80271F78C400FB17C2 /* Sources */,
+				32C7DE81271F78C400FB17C2 /* Frameworks */,
+				32C7DE82271F78C400FB17C2 /* Resources */,
+				32599B1D27D94D7700EE2FF5 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32D9B59027E3893300E5E555 /* PBXTargetDependency */,
+			);
+			name = "PAX calculator (iOS)";
+			productName = "PAX calculator (iOS)";
+			productReference = 32C7DE84271F78C400FB17C2 /* PAX calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32C7DE89271F78C400FB17C2 /* PAX calculator (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32C7DE98271F78C400FB17C2 /* Build configuration list for PBXNativeTarget "PAX calculator (macOS)" */;
+			buildPhases = (
+				32C7DE86271F78C400FB17C2 /* Sources */,
+				32C7DE87271F78C400FB17C2 /* Frameworks */,
+				32C7DE88271F78C400FB17C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PAX calculator (macOS)";
+			productName = "PAX calculator (macOS)";
+			productReference = 32C7DE8A271F78C400FB17C2 /* PAX calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32D9B57527E3893200E5E555 /* PAX calculator watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32D9B59627E3893300E5E555 /* Build configuration list for PBXNativeTarget "PAX calculator watchOS" */;
+			buildPhases = (
+				32D9B57427E3893200E5E555 /* Resources */,
+				32D9B59527E3893300E5E555 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32D9B58127E3893300E5E555 /* PBXTargetDependency */,
+			);
+			name = "PAX calculator watchOS";
+			productName = "PAX calculator watchOS";
+			productReference = 32D9B57627E3893200E5E555 /* PAX.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		32D9B57D27E3893300E5E555 /* PAX calculator watchOS WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32D9B59227E3893300E5E555 /* Build configuration list for PBXNativeTarget "PAX calculator watchOS WatchKit Extension" */;
+			buildPhases = (
+				32D9B57A27E3893300E5E555 /* Sources */,
+				32D9B57B27E3893300E5E555 /* Frameworks */,
+				32D9B57C27E3893300E5E555 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PAX calculator watchOS WatchKit Extension";
+			productName = "PAX calculator watchOS WatchKit Extension";
+			productReference = 32D9B57E27E3893300E5E555 /* PAX calculator watchOS WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32C7DE78271F78C300FB17C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					32C7DE83271F78C400FB17C2 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					32C7DE89271F78C400FB17C2 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					32D9B57527E3893200E5E555 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					32D9B57D27E3893300E5E555 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 32C7DE7B271F78C300FB17C2 /* Build configuration list for PBXProject "PAX calculator" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32C7DE77271F78C300FB17C2;
+			productRefGroup = 32C7DE85271F78C400FB17C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32C7DE83271F78C400FB17C2 /* PAX calculator (iOS) */,
+				32C7DE89271F78C400FB17C2 /* PAX calculator (macOS) */,
+				32D9B57527E3893200E5E555 /* PAX calculator watchOS */,
+				32D9B57D27E3893300E5E555 /* PAX calculator watchOS WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32C7DE82271F78C400FB17C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32C7DE91271F78C400FB17C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32C7DE88271F78C400FB17C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32C7DE92271F78C400FB17C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D9B57427E3893200E5E555 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D9B57927E3893200E5E555 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D9B57C27E3893300E5E555 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D9B58D27E3893300E5E555 /* Preview Assets.xcassets in Resources */,
+				32D9B58A27E3893300E5E555 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32C7DE80271F78C400FB17C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3203BEAA278BA0CA008232C1 /* SoloClass.swift in Sources */,
+				3203BEB3278BB04B008232C1 /* DirectView.swift in Sources */,
+				3203BEAD278BA0E1008232C1 /* SoloClassGroup.swift in Sources */,
+				3203BEA3278B98D0008232C1 /* ProSolo2022.swift in Sources */,
+				32C7DE8F271F78C400FB17C2 /* ContentView.swift in Sources */,
+				3203BEB9278BB29A008232C1 /* SettingsView.swift in Sources */,
+				3203BE9F278A6DEB008232C1 /* Solo2022.swift in Sources */,
+				3203BEB0278BA113008232C1 /* ViewMode.swift in Sources */,
+				32C7DE8D271F78C400FB17C2 /* App.swift in Sources */,
+				32A25C62278BFAAB00AFB9AB /* TimeText.swift in Sources */,
+				3203BEB6278BB169008232C1 /* ListView.swift in Sources */,
+				3247ED0A278E2F0700794238 /* ResizablePicker.swift in Sources */,
+				3203BEBF278BBD3B008232C1 /* IndexType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32C7DE86271F78C400FB17C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3203BEAB278BA0CA008232C1 /* SoloClass.swift in Sources */,
+				3203BEB4278BB04B008232C1 /* DirectView.swift in Sources */,
+				3203BEAE278BA0E1008232C1 /* SoloClassGroup.swift in Sources */,
+				3203BEA4278B98D0008232C1 /* ProSolo2022.swift in Sources */,
+				32C7DE90271F78C400FB17C2 /* ContentView.swift in Sources */,
+				3203BEBA278BB29A008232C1 /* SettingsView.swift in Sources */,
+				3203BEA0278A6DEB008232C1 /* Solo2022.swift in Sources */,
+				3203BEB1278BA113008232C1 /* ViewMode.swift in Sources */,
+				32C7DE8E271F78C400FB17C2 /* App.swift in Sources */,
+				3203BEB7278BB169008232C1 /* ListView.swift in Sources */,
+				3203BEC0278BBD3B008232C1 /* IndexType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D9B57A27E3893300E5E555 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D9B59C27E38A0F00E5E555 /* SoloClass.swift in Sources */,
+				32D9B59D27E38A0F00E5E555 /* SoloClassGroup.swift in Sources */,
+				32574BA127EBA4390055C1CF /* ComplicationViews.swift in Sources */,
+				32D9B59F27E38A0F00E5E555 /* IndexType.swift in Sources */,
+				32D9B5A027E38A0F00E5E555 /* Solo2022.swift in Sources */,
+				323D9D2027EC197100DE1A6A /* ComplicationProvider.swift in Sources */,
+				32D9B5A127E38A0F00E5E555 /* ProSolo2022.swift in Sources */,
+				32D9B59B27E38A0300E5E555 /* TimeText.swift in Sources */,
+				32D9B59927E3898200E5E555 /* ListView.swift in Sources */,
+				32D9B58427E3893300E5E555 /* ContentView.swift in Sources */,
+				32D9B58627E3893300E5E555 /* PAX_calculatorApp.swift in Sources */,
+				32D9B59A27E3898400E5E555 /* TimeInputView.swift in Sources */,
+				32D9B58827E3893300E5E555 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32D9B58127E3893300E5E555 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32D9B57D27E3893300E5E555 /* PAX calculator watchOS WatchKit Extension */;
+			targetProxy = 32D9B58027E3893300E5E555 /* PBXContainerItemProxy */;
+		};
+		32D9B59027E3893300E5E555 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32D9B57527E3893200E5E555 /* PAX calculator watchOS */;
+			targetProxy = 32D9B58F27E3893300E5E555 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		32C7DE93271F78C400FB17C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		32C7DE94271F78C400FB17C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		32C7DE96271F78C400FB17C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PAX calculator (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = GPCTX783ZZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PAX-calculator--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = PAX;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2022.3.17;
+				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax;
+				PRODUCT_NAME = "PAX calculator";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32C7DE97271F78C400FB17C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PAX calculator (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = GPCTX783ZZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PAX-calculator--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = PAX;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2022.3.17;
+				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax;
+				PRODUCT_NAME = "PAX calculator";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32C7DE99271F78C400FB17C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = GPCTX783ZZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 2022.3.17;
+				PRODUCT_BUNDLE_IDENTIFIER = "ferchak.PAX-calculator";
+				PRODUCT_NAME = "PAX calculator";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		32C7DE9A271F78C400FB17C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = GPCTX783ZZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 2022.3.17;
+				PRODUCT_BUNDLE_IDENTIFIER = "ferchak.PAX-calculator";
+				PRODUCT_NAME = "PAX calculator";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		32D9B59327E3893300E5E555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_ASSET_PATHS = "\"PAX calculator watchOS WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = GPCTX783ZZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PAX calculator watchOS WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = PAX;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = PAX_calculator_watchOS_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2022.3.17;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		32D9B59427E3893300E5E555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_ASSET_PATHS = "\"PAX calculator watchOS WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = GPCTX783ZZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PAX calculator watchOS WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = PAX;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = PAX_calculator_watchOS_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2022.3.17;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		32D9B59727E3893300E5E555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = GPCTX783ZZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = PAX_calculator_watchOS_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.ferchak.pax;
+				MARKETING_VERSION = 2022.3.17;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp;
+				PRODUCT_NAME = PAX;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		32D9B59827E3893300E5E555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = GPCTX783ZZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = PAX_calculator_watchOS_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.ferchak.pax;
+				MARKETING_VERSION = 2022.3.17;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp;
+				PRODUCT_NAME = PAX;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32C7DE7B271F78C300FB17C2 /* Build configuration list for PBXProject "PAX calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32C7DE93271F78C400FB17C2 /* Debug */,
+				32C7DE94271F78C400FB17C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32C7DE95271F78C400FB17C2 /* Build configuration list for PBXNativeTarget "PAX calculator (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32C7DE96271F78C400FB17C2 /* Debug */,
+				32C7DE97271F78C400FB17C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32C7DE98271F78C400FB17C2 /* Build configuration list for PBXNativeTarget "PAX calculator (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32C7DE99271F78C400FB17C2 /* Debug */,
+				32C7DE9A271F78C400FB17C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32D9B59227E3893300E5E555 /* Build configuration list for PBXNativeTarget "PAX calculator watchOS WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32D9B59327E3893300E5E555 /* Debug */,
+				32D9B59427E3893300E5E555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32D9B59627E3893300E5E555 /* Build configuration list for PBXNativeTarget "PAX calculator watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32D9B59727E3893300E5E555 /* Debug */,
+				32D9B59827E3893300E5E555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32C7DE78271F78C300FB17C2 /* Project object */;
+}
