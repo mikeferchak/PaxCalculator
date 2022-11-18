@@ -7,12 +7,7 @@
 		<key>PAX calculator (iOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
-		<key>PAX calculator (macOS).xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>3</integer>
 		</dict>
 		<key>PAX calculator watchOS (Complication).xcscheme_^#shared#^_</key>
 		<dict>
@@ -33,6 +28,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>32C7DE83271F78C400FB17C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>32D9B57527E3893200E5E555</key>
 		<dict>
 			<key>primary</key>
 			<true/>
