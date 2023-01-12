@@ -95,12 +95,12 @@ struct ListRow: View {
                     .foregroundColor(isSelected ? .primary : nil)
                     .lineLimit(1)
 
-                timeText(outputPax)
+                Helpers.timeText(outputPax)
                     .dynamicTypeSize(.xSmall)
                     .foregroundColor(.secondary)
                 Spacer()
                 
-                timeText(outputTime)
+                Helpers.timeText(outputTime)
                     .dynamicTypeSize(.xLarge)
                     .font(Font.body.weight(.bold))
                     .foregroundColor(isSelected ? .primary : nil)

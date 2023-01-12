@@ -8,6 +8,7 @@
 import SwiftUI
 import Combine
 
+
 struct ListView: View {
     @AppStorage("indexType") var indexType: IndexType = .solo
     @AppStorage("inputTime") var inputTime: Double = 60.000
@@ -57,7 +58,7 @@ struct ListRow: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.1)
 
-            timeText(outputPax)
+            Helpers.timeText(outputPax)
                 .dynamicTypeSize(.small)
                 .foregroundColor(.secondary)
             Spacer()
@@ -80,7 +81,7 @@ struct ListRow: View {
                     .font(Font.body.weight(.black))
                     .multilineTextAlignment(.trailing)
             } else {
-                timeText(outputTime).font(Font.body.weight(.bold))
+                Helpers.timeText(outputTime).font(Font.body.weight(.bold))
             }
         }
         .onTapGesture {

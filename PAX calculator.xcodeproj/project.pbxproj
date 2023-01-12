@@ -19,9 +19,9 @@
 		3222542C296F7E9B0034676B /* ProSolo2023.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3222542B296F7E9B0034676B /* ProSolo2023.swift */; };
 		3222542D296F7E9B0034676B /* ProSolo2023.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3222542B296F7E9B0034676B /* ProSolo2023.swift */; };
 		323D9D2027EC197100DE1A6A /* ComplicationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323D9D1F27EC197100DE1A6A /* ComplicationProvider.swift */; };
-		3247ED0A278E2F0700794238 /* ResizablePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247ED09278E2F0700794238 /* ResizablePicker.swift */; };
 		32574BA127EBA4390055C1CF /* ComplicationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32574BA027EBA4390055C1CF /* ComplicationViews.swift */; };
-		32A25C62278BFAAB00AFB9AB /* TimeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A25C61278BFAAB00AFB9AB /* TimeText.swift */; };
+		32C35102296F905200DD91E1 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C35101296F905200DD91E1 /* Helpers.swift */; };
+		32C35103296FA45000DD91E1 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C35101296F905200DD91E1 /* Helpers.swift */; };
 		32C7DE8D271F78C400FB17C2 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C7DE7D271F78C300FB17C2 /* App.swift */; };
 		32C7DE8F271F78C400FB17C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C7DE7E271F78C300FB17C2 /* ContentView.swift */; };
 		32C7DE91271F78C400FB17C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C7DE7F271F78C400FB17C2 /* Assets.xcassets */; };
@@ -34,7 +34,6 @@
 		32D9B59127E3893300E5E555 /* PAX.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 32D9B57627E3893200E5E555 /* PAX.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		32D9B59927E3898200E5E555 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32599B1E27D94F0B00EE2FF5 /* ListView.swift */; };
 		32D9B59A27E3898400E5E555 /* TimeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B4106227E2C57B00DD9F50 /* TimeInputView.swift */; };
-		32D9B59B27E38A0300E5E555 /* TimeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A25C61278BFAAB00AFB9AB /* TimeText.swift */; };
 		32D9B59C27E38A0F00E5E555 /* SoloClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEA9278BA0CA008232C1 /* SoloClass.swift */; };
 		32D9B59D27E38A0F00E5E555 /* SoloClassGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEAC278BA0E1008232C1 /* SoloClassGroup.swift */; };
 		32D9B59F27E38A0F00E5E555 /* IndexType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEBE278BBD3B008232C1 /* IndexType.swift */; };
@@ -80,11 +79,10 @@
 		3203BEBE278BBD3B008232C1 /* IndexType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexType.swift; sourceTree = "<group>"; };
 		3222542B296F7E9B0034676B /* ProSolo2023.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProSolo2023.swift; sourceTree = "<group>"; };
 		323D9D1F27EC197100DE1A6A /* ComplicationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationProvider.swift; sourceTree = "<group>"; };
-		3247ED09278E2F0700794238 /* ResizablePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizablePicker.swift; sourceTree = "<group>"; };
 		32574BA027EBA4390055C1CF /* ComplicationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationViews.swift; sourceTree = "<group>"; };
 		32599B1E27D94F0B00EE2FF5 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		32A25C61278BFAAB00AFB9AB /* TimeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeText.swift; sourceTree = "<group>"; };
 		32B4106227E2C57B00DD9F50 /* TimeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInputView.swift; sourceTree = "<group>"; };
+		32C35101296F905200DD91E1 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		32C7DE7D271F78C300FB17C2 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		32C7DE7E271F78C300FB17C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		32C7DE7F271F78C400FB17C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -141,11 +139,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		32A25C60278BFA9800AFB9AB /* Helpers */ = {
+		32C350FD296F8D1500DD91E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				32A25C61278BFAAB00AFB9AB /* TimeText.swift */,
-				3247ED09278E2F0700794238 /* ResizablePicker.swift */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32C35100296F8FF700DD91E1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				32C35101296F905200DD91E1 /* Helpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -159,13 +163,14 @@
 				32D9B57727E3893200E5E555 /* PAX calculator watchOS */,
 				32D9B58227E3893300E5E555 /* PAX calculator watchOS WatchKit Extension */,
 				32C7DE85271F78C400FB17C2 /* Products */,
+				32C350FD296F8D1500DD91E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		32C7DE7C271F78C300FB17C2 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				32A25C60278BFA9800AFB9AB /* Helpers */,
+				32C35100296F8FF700DD91E1 /* Helpers */,
 				3203BEA8278BA0BC008232C1 /* Model */,
 				3203BEA1278B8D5D008232C1 /* Data */,
 				32C7DE7D271F78C300FB17C2 /* App.swift */,
@@ -330,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3203BEAA278BA0CA008232C1 /* SoloClass.swift in Sources */,
+				32C35102296F905200DD91E1 /* Helpers.swift in Sources */,
 				3203BEB3278BB04B008232C1 /* DirectView.swift in Sources */,
 				3203BEAD278BA0E1008232C1 /* SoloClassGroup.swift in Sources */,
 				3203BEA3278B98D0008232C1 /* ProSolo2022.swift in Sources */,
@@ -339,10 +345,8 @@
 				3203BEB0278BA113008232C1 /* ViewMode.swift in Sources */,
 				32C7DE8D271F78C400FB17C2 /* App.swift in Sources */,
 				3222542C296F7E9B0034676B /* ProSolo2023.swift in Sources */,
-				32A25C62278BFAAB00AFB9AB /* TimeText.swift in Sources */,
 				3203BEB6278BB169008232C1 /* ListView.swift in Sources */,
 				32FA344629284A4200FCF8F7 /* Solo2023.swift in Sources */,
-				3247ED0A278E2F0700794238 /* ResizablePicker.swift in Sources */,
 				3203BEBF278BBD3B008232C1 /* IndexType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,13 +362,13 @@
 				32D9B5A027E38A0F00E5E555 /* Solo2022.swift in Sources */,
 				323D9D2027EC197100DE1A6A /* ComplicationProvider.swift in Sources */,
 				32D9B5A127E38A0F00E5E555 /* ProSolo2022.swift in Sources */,
-				32D9B59B27E38A0300E5E555 /* TimeText.swift in Sources */,
 				32D9B59927E3898200E5E555 /* ListView.swift in Sources */,
 				3222542D296F7E9B0034676B /* ProSolo2023.swift in Sources */,
 				32D9B58427E3893300E5E555 /* ContentView.swift in Sources */,
 				32D9B58627E3893300E5E555 /* PAX_calculatorApp.swift in Sources */,
 				32FA344729284A4200FCF8F7 /* Solo2023.swift in Sources */,
 				32D9B59A27E3898400E5E555 /* TimeInputView.swift in Sources */,
+				32C35103296FA45000DD91E1 /* Helpers.swift in Sources */,
 				32D9B58827E3893300E5E555 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,7 +509,7 @@
 				CODE_SIGN_ENTITLEMENTS = "PAX calculator (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "Shared/Helpers/TimeText.swift Shared/Helpers/ResizablePicker.swift";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = GPCTX783ZZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -542,7 +546,7 @@
 				CODE_SIGN_ENTITLEMENTS = "PAX calculator (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "Shared/Helpers/TimeText.swift Shared/Helpers/ResizablePicker.swift";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = GPCTX783ZZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

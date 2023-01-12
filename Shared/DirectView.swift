@@ -127,7 +127,7 @@ struct OutputTime: View {
         let vTiny = verticalSizeClass == .compact
         VStack {
             HStack {
-                timeText(time)
+                Helpers.timeText(time)
                     .font(.system(size: vTiny && focused.wrappedValue ? 24 : 80))
                     .fontWeight(.bold)
                     .minimumScaleFactor(vTiny && focused.wrappedValue ? 1.0 : 0.1)
@@ -137,7 +137,7 @@ struct OutputTime: View {
             if(verticalSizeClass != .compact) {
                 HStack {
                     Text("\(selectedClass.rawValue)").foregroundColor(.secondary).padding(.leading, 5)
-                    timeText(pax)
+                    Helpers.timeText(pax)
                     Spacer()
                 }
             }
@@ -181,7 +181,7 @@ struct InputTime: View {
             if(!vTiny) {
                 HStack {
                     Text("\(inputClass.rawValue)").foregroundColor(.secondary).padding(.leading, 5)
-                    timeText(inputPax)
+                    Helpers.timeText(inputPax)
                     Spacer()
                 }
             }
@@ -230,5 +230,83 @@ struct DiffView: View {
             }
             
         }.frame(minHeight: 0, idealHeight: 10, maxHeight: 10, alignment: .center)
+    }
+}
+
+struct ResizeablePicker<SelectionValue>: UIViewRepresentable where SelectionValue: CustomStringConvertible & Hashable {
+    private let selection: Binding<SelectionValue>
+    private var selectedRow: Int = 0
+
+    private let data: [SelectionValue]
+    private let formatter: (SelectionValue) -> String
+    private let colorer: (SelectionValue) -> Color
+
+    public init(selection: Binding<SelectionValue>,
+                data: [SelectionValue],
+                formatter: @escaping (SelectionValue) -> String = { $0.description },
+                colorer: @escaping (SelectionValue) -> Color = { _ in .primary }
+    ) {
+        self.selection = selection
+        self.selectedRow = data.firstIndex(of: selection.wrappedValue) ?? 0
+        self.data = data
+        self.formatter = formatter
+        self.colorer = colorer
+    }
+
+    func makeCoordinator() -> ResizeablePicker.Coordinator {
+        Coordinator(self)
+    }
+
+    func makeUIView(context: UIViewRepresentableContext<ResizeablePicker>) -> UIPickerView {
+        let picker = UIPickerViewResizeable(frame: .zero)
+        
+        picker.dataSource = context.coordinator
+        picker.delegate = context.coordinator
+
+        return picker
+    }
+
+    func updateUIView(_ view: UIPickerView, context: UIViewRepresentableContext<ResizeablePicker>) {
+        if view.selectedRow(inComponent: 0) != selectedRow {
+            view.selectRow(selectedRow, inComponent: 0, animated: true)
+        }
+    }
+
+    class Coordinator: NSObject, UIPickerViewDataSource, UIPickerViewDelegate {
+        private var picker: ResizeablePicker
+
+        init(_ pickerView: ResizeablePicker) {
+            self.picker = pickerView
+        }
+
+        func numberOfComponents(in pickerView: UIPickerView) -> Int {
+            1
+        }
+
+        func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+            picker.data.count
+        }
+
+        func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+            let text = self.picker.formatter(picker.data[row])
+            let result = view as? UILabel ?? UILabel()
+            result.text = text
+            result.font = UIFont.preferredFont(forTextStyle: .title2)
+            result.textAlignment = .center
+            result.textColor = UIColor(picker.colorer(picker.data[row]))
+            result.accessibilityHint = text
+            return result
+        }
+        
+        func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+            picker.selectedRow = row
+            picker.selection.wrappedValue = picker.data[row]
+        }
+    }
+}
+
+class UIPickerViewResizeable: UIPickerView {
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: UIView.noIntrinsicMetric, height: super.intrinsicContentSize.height)
     }
 }
