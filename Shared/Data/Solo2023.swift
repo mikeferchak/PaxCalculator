@@ -10,7 +10,7 @@ import Foundation
 
 let solo2023: [SoloClassGroup: [SoloClass: Double]] = [
     .Street :[
-        .SS: 0.832,
+        .SS: 0.833,
         .AS: 0.823,
         .BS: 0.818,
         .CS: 0.811,
@@ -31,9 +31,7 @@ let solo2023: [SoloClassGroup: [SoloClass: Double]] = [
     ],
     .StreetPrepared: [
         .SSP: 0.855,
-        .ASP: 0.849,
-        .BSP: 0.852,
-        .CSP: 0.864,
+        .CSP: 0.860,
         .DSP: 0.844,
         .ESP: 0.840,
         .FSP: 0.828,
@@ -45,7 +43,6 @@ let solo2023: [SoloClassGroup: [SoloClass: Double]] = [
     ],
     .Prepared: [
         .XP: 0.884,
-//        .BP: 0.867,
         .CP: 0.858,
         .DP: 0.865,
         .EP: 0.856,
@@ -66,13 +63,14 @@ let solo2023: [SoloClassGroup: [SoloClass: Double]] = [
         .SSC: 0.807,
     ],
     .Supplemental: [
-        .CAMC: 0.819,
-        .CAMT: 0.816,
-        .CAMS: 0.839,
+        .CAMC: 0.827,
+        .CAMT: 0.819,
+        .CAMS: 0.845,
         .FSAE: 0.981,
-        .XSA: 0.842,
-        .XSB: 0.848,
-        .EVX: 0.838,
+        .XA: 0.842,
+        .XB: 0.848,
+        .XS: 0.851,
+        .EVX: 0.832,
         .HCS: 0.793,
         .HCR: 0.815
     ]

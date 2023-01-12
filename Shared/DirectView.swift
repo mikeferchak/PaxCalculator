@@ -23,11 +23,11 @@ struct DirectView: View {
     @FocusState private var focused: Bool
     
     var body: some View {
-        let selectedIndex = indexType == .solo ? solo2022 : proSolo2022
+        let selectedIndex = indexType == .solo ? solo2023 : proSolo2023
         let paxIndexValues = Dictionary(uniqueKeysWithValues: selectedIndex.map {key,value in value.map{$0}}.flatMap{$0})
         
-        let inputPax = paxIndexValues[inputClass] ?? 0.0
-        let outputPax = paxIndexValues[outputClass] ?? 0.0
+        let inputPax = paxIndexValues[inputClass] ?? 1.0
+        let outputPax = paxIndexValues[outputClass] ?? 1.0
         
         let outputTime = inputTime * (inputPax / outputPax)
         let sortedClasses = SoloClass.allCases.filter({ paxIndexValues.keys.contains($0)}).sorted { $0.rawValue < $1.rawValue }

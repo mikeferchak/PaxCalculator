@@ -16,6 +16,8 @@
 		3203BEB6278BB169008232C1 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEB5278BB169008232C1 /* ListView.swift */; };
 		3203BEB9278BB29A008232C1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEB8278BB29A008232C1 /* SettingsView.swift */; };
 		3203BEBF278BBD3B008232C1 /* IndexType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEBE278BBD3B008232C1 /* IndexType.swift */; };
+		3222542C296F7E9B0034676B /* ProSolo2023.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3222542B296F7E9B0034676B /* ProSolo2023.swift */; };
+		3222542D296F7E9B0034676B /* ProSolo2023.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3222542B296F7E9B0034676B /* ProSolo2023.swift */; };
 		323D9D2027EC197100DE1A6A /* ComplicationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323D9D1F27EC197100DE1A6A /* ComplicationProvider.swift */; };
 		3247ED0A278E2F0700794238 /* ResizablePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247ED09278E2F0700794238 /* ResizablePicker.swift */; };
 		32574BA127EBA4390055C1CF /* ComplicationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32574BA027EBA4390055C1CF /* ComplicationViews.swift */; };
@@ -38,6 +40,8 @@
 		32D9B59F27E38A0F00E5E555 /* IndexType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEBE278BBD3B008232C1 /* IndexType.swift */; };
 		32D9B5A027E38A0F00E5E555 /* Solo2022.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BE9E278A6DEB008232C1 /* Solo2022.swift */; };
 		32D9B5A127E38A0F00E5E555 /* ProSolo2022.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEA2278B98D0008232C1 /* ProSolo2022.swift */; };
+		32FA344629284A4200FCF8F7 /* Solo2023.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FA344529284A4200FCF8F7 /* Solo2023.swift */; };
+		32FA344729284A4200FCF8F7 /* Solo2023.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FA344529284A4200FCF8F7 /* Solo2023.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,7 @@
 		3203BEB5278BB169008232C1 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		3203BEB8278BB29A008232C1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3203BEBE278BBD3B008232C1 /* IndexType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexType.swift; sourceTree = "<group>"; };
+		3222542B296F7E9B0034676B /* ProSolo2023.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProSolo2023.swift; sourceTree = "<group>"; };
 		323D9D1F27EC197100DE1A6A /* ComplicationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationProvider.swift; sourceTree = "<group>"; };
 		3247ED09278E2F0700794238 /* ResizablePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizablePicker.swift; sourceTree = "<group>"; };
 		32574BA027EBA4390055C1CF /* ComplicationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationViews.swift; sourceTree = "<group>"; };
@@ -93,6 +98,7 @@
 		32D9B58927E3893300E5E555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32D9B58C27E3893300E5E555 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		32F4C12F278A544A006FFEE2 /* PAX calculator (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PAX calculator (iOS).entitlements"; sourceTree = "<group>"; };
+		32FA344529284A4200FCF8F7 /* Solo2023.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solo2023.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,8 @@
 			children = (
 				3203BE9E278A6DEB008232C1 /* Solo2022.swift */,
 				3203BEA2278B98D0008232C1 /* ProSolo2022.swift */,
+				32FA344529284A4200FCF8F7 /* Solo2023.swift */,
+				3222542B296F7E9B0034676B /* ProSolo2023.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -330,8 +338,10 @@
 				3203BE9F278A6DEB008232C1 /* Solo2022.swift in Sources */,
 				3203BEB0278BA113008232C1 /* ViewMode.swift in Sources */,
 				32C7DE8D271F78C400FB17C2 /* App.swift in Sources */,
+				3222542C296F7E9B0034676B /* ProSolo2023.swift in Sources */,
 				32A25C62278BFAAB00AFB9AB /* TimeText.swift in Sources */,
 				3203BEB6278BB169008232C1 /* ListView.swift in Sources */,
+				32FA344629284A4200FCF8F7 /* Solo2023.swift in Sources */,
 				3247ED0A278E2F0700794238 /* ResizablePicker.swift in Sources */,
 				3203BEBF278BBD3B008232C1 /* IndexType.swift in Sources */,
 			);
@@ -350,8 +360,10 @@
 				32D9B5A127E38A0F00E5E555 /* ProSolo2022.swift in Sources */,
 				32D9B59B27E38A0300E5E555 /* TimeText.swift in Sources */,
 				32D9B59927E3898200E5E555 /* ListView.swift in Sources */,
+				3222542D296F7E9B0034676B /* ProSolo2023.swift in Sources */,
 				32D9B58427E3893300E5E555 /* ContentView.swift in Sources */,
 				32D9B58627E3893300E5E555 /* PAX_calculatorApp.swift in Sources */,
+				32FA344729284A4200FCF8F7 /* Solo2023.swift in Sources */,
 				32D9B59A27E3898400E5E555 /* TimeInputView.swift in Sources */,
 				32D9B58827E3893300E5E555 /* ComplicationController.swift in Sources */,
 			);
@@ -492,13 +504,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "PAX calculator (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "Shared/Helpers/TimeText.swift Shared/Helpers/ResizablePicker.swift";
 				DEVELOPMENT_TEAM = GPCTX783ZZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_CFBundleDisplayName = PAX;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -509,7 +522,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2022.3.17;
+				MARKETING_VERSION = 2023.01.11;
 				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax;
 				PRODUCT_NAME = "PAX calculator";
@@ -528,13 +541,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "PAX calculator (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "Shared/Helpers/TimeText.swift Shared/Helpers/ResizablePicker.swift";
 				DEVELOPMENT_TEAM = GPCTX783ZZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_CFBundleDisplayName = PAX;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -545,7 +559,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2022.3.17;
+				MARKETING_VERSION = 2023.01.11;
 				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax;
 				PRODUCT_NAME = "PAX calculator";
@@ -567,10 +581,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GPCTX783ZZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = PAX.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.ferchak.pax;
@@ -579,7 +593,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2022.3.17;
+				MARKETING_VERSION = 2023.01.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp;
 				PRODUCT_NAME = PAX;
 				SDKROOT = watchos;
@@ -600,10 +614,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GPCTX783ZZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = PAX.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.ferchak.pax;
@@ -612,7 +626,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2022.3.17;
+				MARKETING_VERSION = 2023.01.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp;
 				PRODUCT_NAME = PAX;
 				SDKROOT = watchos;
