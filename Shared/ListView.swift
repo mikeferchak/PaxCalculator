@@ -15,13 +15,13 @@ struct ListView: View {
     @AppStorage("inputClass") var inputClass: SoloClass = .SSC
     
     var body: some View {
-        let selectedIndex = indexType == .solo ? solo2023 : proSolo2023
+        let selectedIndex = indexType == .solo ? solo2024 : proSolo2024
         let groups = selectedIndex.map {key, value in key}.sorted { $0.rawValue < $1.rawValue }
         
         let paxIndexValues = Dictionary(uniqueKeysWithValues: selectedIndex.map {key,value in value.compactMap{$0}}.flatMap{$0})
         let inputPax = paxIndexValues[inputClass] ?? 1.0
         
-        ZStack {
+//        ZStack {
             List(groups) { group in
                 Section(group.rawValue) {
                     let groupItems = (selectedIndex[group] ?? [:]).compactMap {$0}.sorted { $0.key.rawValue < $1.key.rawValue }
@@ -35,7 +35,7 @@ struct ListView: View {
                     }
                 }
             }.listStyle(.plain)
-        }
+//        }
     }
 }
 

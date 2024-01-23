@@ -23,7 +23,7 @@ struct DirectView: View {
     @FocusState private var focused: Bool
     
     var body: some View {
-        let selectedIndex = indexType == .solo ? solo2023 : proSolo2023
+        let selectedIndex = indexType == .solo ? solo2024 : proSolo2024
         let paxIndexValues = Dictionary(uniqueKeysWithValues: selectedIndex.map {key,value in value.map{$0}}.flatMap{$0})
         
         let inputPax = paxIndexValues[inputClass] ?? 1.0
@@ -32,7 +32,6 @@ struct DirectView: View {
         let outputTime = inputTime * (inputPax / outputPax)
         let sortedClasses = SoloClass.allCases.filter({ paxIndexValues.keys.contains($0)}).sorted { $0.rawValue < $1.rawValue }
         
-        let sortedClassesValues = sortedClasses.map {$0.rawValue}
         let vTiny = verticalSizeClass == .compact
           
         VStack {
@@ -43,7 +42,7 @@ struct DirectView: View {
                 if(vTiny) {
                     Menu {
                         Picker("output", selection: $outputClass) {
-                            ForEach(sortedClasses) { sortedClass in
+                            ForEach(sortedClasses, id: \.self) { sortedClass in
                                 Text(sortedClass.rawValue).tag(sortedClass)
                             }
                         }
@@ -59,15 +58,20 @@ struct DirectView: View {
                     }
                     .foregroundColor(.secondary)
                 } else {
-                    ResizeablePicker(selection: $outputClassSelection, data: sortedClassesValues)
-                        .onAppear {
-                            self.outputClassSelection = outputClass.rawValue
+                    Picker("output", selection: $outputClass) {
+                        ForEach(sortedClasses, id: \.self) { sortedClass in
+                            Text(sortedClass.rawValue).tag(sortedClass)
                         }
-                        .onChange(of: outputClassSelection) { selection in
-                            let selectedClass = SoloClass.allCases.filter {$0.rawValue == selection}.first ?? SoloClass.AS
-                            self.outputClass = selectedClass
-                        }
-                        .frame(minWidth: 100, idealWidth: 100, maxWidth: 120, alignment: .center)
+                    }
+                    .pickerStyle(.wheel)
+                    .onAppear {
+                        self.outputClassSelection = outputClass.rawValue
+                    }
+                    .onChange(of: outputClassSelection) { selection in
+                        let selectedClass = SoloClass.allCases.filter {$0.rawValue == selection}.first ?? SoloClass.AS
+                        self.outputClass = selectedClass
+                    }
+                    .frame(minWidth: 100, idealWidth: 100, maxWidth: 120, alignment: .center)
                 }
             }
             .frame(minWidth: 0, idealWidth: 400, maxWidth: 600, minHeight: 0, idealHeight: 300, maxHeight: 300, alignment: .center)
@@ -82,7 +86,7 @@ struct DirectView: View {
                 if(vTiny) {
                     Menu {
                         Picker("input", selection: $inputClass) {
-                            ForEach(sortedClasses) { sortedClass in
+                            ForEach(sortedClasses, id: \.self) { sortedClass in
                                 Text(sortedClass.rawValue).tag(sortedClass)
                             }
                         }
@@ -98,7 +102,12 @@ struct DirectView: View {
                     }
                     .foregroundColor(.secondary)
                 } else {
-                ResizeablePicker(selection: $inputClassSelection, data: sortedClassesValues)
+                    Picker("input", selection: $inputClassSelection) {
+                        ForEach(sortedClasses, id: \.rawValue) { sortedClass in
+                            Text(sortedClass.rawValue).tag(sortedClass)
+                        }
+                    }
+                    .pickerStyle(.wheel)
                     .onAppear {
                         self.inputClassSelection = inputClass.rawValue
                     }
@@ -230,83 +239,5 @@ struct DiffView: View {
             }
             
         }.frame(minHeight: 0, idealHeight: 10, maxHeight: 10, alignment: .center)
-    }
-}
-
-struct ResizeablePicker<SelectionValue>: UIViewRepresentable where SelectionValue: CustomStringConvertible & Hashable {
-    private let selection: Binding<SelectionValue>
-    private var selectedRow: Int = 0
-
-    private let data: [SelectionValue]
-    private let formatter: (SelectionValue) -> String
-    private let colorer: (SelectionValue) -> Color
-
-    public init(selection: Binding<SelectionValue>,
-                data: [SelectionValue],
-                formatter: @escaping (SelectionValue) -> String = { $0.description },
-                colorer: @escaping (SelectionValue) -> Color = { _ in .primary }
-    ) {
-        self.selection = selection
-        self.selectedRow = data.firstIndex(of: selection.wrappedValue) ?? 0
-        self.data = data
-        self.formatter = formatter
-        self.colorer = colorer
-    }
-
-    func makeCoordinator() -> ResizeablePicker.Coordinator {
-        Coordinator(self)
-    }
-
-    func makeUIView(context: UIViewRepresentableContext<ResizeablePicker>) -> UIPickerView {
-        let picker = UIPickerViewResizeable(frame: .zero)
-        
-        picker.dataSource = context.coordinator
-        picker.delegate = context.coordinator
-
-        return picker
-    }
-
-    func updateUIView(_ view: UIPickerView, context: UIViewRepresentableContext<ResizeablePicker>) {
-        if view.selectedRow(inComponent: 0) != selectedRow {
-            view.selectRow(selectedRow, inComponent: 0, animated: true)
-        }
-    }
-
-    class Coordinator: NSObject, UIPickerViewDataSource, UIPickerViewDelegate {
-        private var picker: ResizeablePicker
-
-        init(_ pickerView: ResizeablePicker) {
-            self.picker = pickerView
-        }
-
-        func numberOfComponents(in pickerView: UIPickerView) -> Int {
-            1
-        }
-
-        func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-            picker.data.count
-        }
-
-        func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
-            let text = self.picker.formatter(picker.data[row])
-            let result = view as? UILabel ?? UILabel()
-            result.text = text
-            result.font = UIFont.preferredFont(forTextStyle: .title2)
-            result.textAlignment = .center
-            result.textColor = UIColor(picker.colorer(picker.data[row]))
-            result.accessibilityHint = text
-            return result
-        }
-        
-        func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-            picker.selectedRow = row
-            picker.selection.wrappedValue = picker.data[row]
-        }
-    }
-}
-
-class UIPickerViewResizeable: UIPickerView {
-    override var intrinsicContentSize: CGSize {
-        return CGSize(width: UIView.noIntrinsicMetric, height: super.intrinsicContentSize.height)
     }
 }

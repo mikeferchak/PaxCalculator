@@ -18,6 +18,10 @@
 		3203BEBF278BBD3B008232C1 /* IndexType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203BEBE278BBD3B008232C1 /* IndexType.swift */; };
 		3222542C296F7E9B0034676B /* ProSolo2023.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3222542B296F7E9B0034676B /* ProSolo2023.swift */; };
 		3222542D296F7E9B0034676B /* ProSolo2023.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3222542B296F7E9B0034676B /* ProSolo2023.swift */; };
+		3237959F2B5F6002008D9A7B /* Solo2024.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237959E2B5F6002008D9A7B /* Solo2024.swift */; };
+		323795A02B5F6002008D9A7B /* Solo2024.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237959E2B5F6002008D9A7B /* Solo2024.swift */; };
+		323795A22B5F6393008D9A7B /* ProSolo2024.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323795A12B5F6393008D9A7B /* ProSolo2024.swift */; };
+		323795A32B5F6393008D9A7B /* ProSolo2024.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323795A12B5F6393008D9A7B /* ProSolo2024.swift */; };
 		323D9D2027EC197100DE1A6A /* ComplicationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323D9D1F27EC197100DE1A6A /* ComplicationProvider.swift */; };
 		32574BA127EBA4390055C1CF /* ComplicationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32574BA027EBA4390055C1CF /* ComplicationViews.swift */; };
 		32C35102296F905200DD91E1 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C35101296F905200DD91E1 /* Helpers.swift */; };
@@ -78,6 +82,8 @@
 		3203BEB8278BB29A008232C1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3203BEBE278BBD3B008232C1 /* IndexType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexType.swift; sourceTree = "<group>"; };
 		3222542B296F7E9B0034676B /* ProSolo2023.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProSolo2023.swift; sourceTree = "<group>"; };
+		3237959E2B5F6002008D9A7B /* Solo2024.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solo2024.swift; sourceTree = "<group>"; };
+		323795A12B5F6393008D9A7B /* ProSolo2024.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProSolo2024.swift; sourceTree = "<group>"; };
 		323D9D1F27EC197100DE1A6A /* ComplicationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationProvider.swift; sourceTree = "<group>"; };
 		32574BA027EBA4390055C1CF /* ComplicationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationViews.swift; sourceTree = "<group>"; };
 		32599B1E27D94F0B00EE2FF5 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -124,6 +130,8 @@
 				3203BEA2278B98D0008232C1 /* ProSolo2022.swift */,
 				32FA344529284A4200FCF8F7 /* Solo2023.swift */,
 				3222542B296F7E9B0034676B /* ProSolo2023.swift */,
+				3237959E2B5F6002008D9A7B /* Solo2024.swift */,
+				323795A12B5F6393008D9A7B /* ProSolo2024.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -279,7 +287,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					32C7DE83271F78C400FB17C2 = {
 						CreatedOnToolsVersion = 13.0;
@@ -336,6 +344,7 @@
 			files = (
 				3203BEAA278BA0CA008232C1 /* SoloClass.swift in Sources */,
 				32C35102296F905200DD91E1 /* Helpers.swift in Sources */,
+				323795A22B5F6393008D9A7B /* ProSolo2024.swift in Sources */,
 				3203BEB3278BB04B008232C1 /* DirectView.swift in Sources */,
 				3203BEAD278BA0E1008232C1 /* SoloClassGroup.swift in Sources */,
 				3203BEA3278B98D0008232C1 /* ProSolo2022.swift in Sources */,
@@ -344,6 +353,7 @@
 				3203BE9F278A6DEB008232C1 /* Solo2022.swift in Sources */,
 				3203BEB0278BA113008232C1 /* ViewMode.swift in Sources */,
 				32C7DE8D271F78C400FB17C2 /* App.swift in Sources */,
+				3237959F2B5F6002008D9A7B /* Solo2024.swift in Sources */,
 				3222542C296F7E9B0034676B /* ProSolo2023.swift in Sources */,
 				3203BEB6278BB169008232C1 /* ListView.swift in Sources */,
 				32FA344629284A4200FCF8F7 /* Solo2023.swift in Sources */,
@@ -361,6 +371,7 @@
 				32D9B59F27E38A0F00E5E555 /* IndexType.swift in Sources */,
 				32D9B5A027E38A0F00E5E555 /* Solo2022.swift in Sources */,
 				323D9D2027EC197100DE1A6A /* ComplicationProvider.swift in Sources */,
+				323795A32B5F6393008D9A7B /* ProSolo2024.swift in Sources */,
 				32D9B5A127E38A0F00E5E555 /* ProSolo2022.swift in Sources */,
 				32D9B59927E3898200E5E555 /* ListView.swift in Sources */,
 				3222542D296F7E9B0034676B /* ProSolo2023.swift in Sources */,
@@ -369,6 +380,7 @@
 				32FA344729284A4200FCF8F7 /* Solo2023.swift in Sources */,
 				32D9B59A27E3898400E5E555 /* TimeInputView.swift in Sources */,
 				32C35103296FA45000DD91E1 /* Helpers.swift in Sources */,
+				323795A02B5F6002008D9A7B /* Solo2024.swift in Sources */,
 				32D9B58827E3893300E5E555 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +434,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -436,13 +449,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -484,6 +497,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -492,12 +506,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -521,12 +535,12 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2023.01.11;
+				MARKETING_VERSION = 2024.01.22;
 				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax;
 				PRODUCT_NAME = "PAX calculator";
@@ -558,12 +572,12 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2023.01.11;
+				MARKETING_VERSION = 2024.01.22;
 				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax;
 				PRODUCT_NAME = "PAX calculator";
@@ -597,7 +611,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2023.01.11;
+				MARKETING_VERSION = 2024.01.22;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp;
 				PRODUCT_NAME = PAX;
 				SDKROOT = watchos;
@@ -630,7 +644,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2023.01.11;
+				MARKETING_VERSION = 2024.01.22;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp;
 				PRODUCT_NAME = PAX;
 				SDKROOT = watchos;
