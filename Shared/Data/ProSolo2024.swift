@@ -20,6 +20,7 @@ let proSolo2024: [SoloClassGroup: [SoloClass: Double]] = [
         .DS4: 0.809,
         .ES: 0.787,
         .FS: 0.811,
+        .FS4: 0.813,
         .GS: 0.787,
         .HS: 0.777,
     ],
@@ -65,16 +66,12 @@ let proSolo2024: [SoloClassGroup: [SoloClass: Double]] = [
         .DM: 0.920,
         .EM: 0.930,
         .FM: 0.928,
-    ],
-    .Kart: [
         .KM: 0.943,
     ],
-    .SoloSpecCoupe: [
-        .SSC: 0.798,
-    ],
-    .ClubSpec: [
+    .Spec: [
         .CSM: 0.809,
-        .CSX: 0.806
+        .CSX: 0.806,
+        .SSC: 0.798,
     ],
     .Supplemental: [
         .CAMC: 0.828,
@@ -87,7 +84,8 @@ let proSolo2024: [SoloClassGroup: [SoloClass: Double]] = [
         .XB4: 0.863,
         .XU: 0.867,
         .XU4: 0.873,
-        .EVX: 0.854,
+        .EVX: 0.838,
+        .EVX4: 0.848
     ]
 ]
 

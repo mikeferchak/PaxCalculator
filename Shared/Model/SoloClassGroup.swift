@@ -8,7 +8,7 @@
 import Foundation
 
 enum SoloClassGroup: String, CaseIterable, Identifiable {
-    case Street, StreetTouring = "Street Touring", StreetPrepared = "Street Prepared", StreetModified = "Street Modified", Prepared, Modified, Kart, SoloSpecCoupe = "Solo Spec Coupe", CAM, XtremeStreet = "XTreme Street", HeritageClassic = "Heritage Classic", FSAE = "Formula SAE", EVX = "Electric Vehicle Experimental", Supplemental, ClubSpec = "Club Spec"
+    case Street, StreetTouring = "Street Touring", StreetPrepared = "Street Prepared", StreetModified = "Street Modified", Prepared, Modified, Kart, SoloSpecCoupe = "Solo Spec Coupe", CAM, XtremeStreet = "XTreme Street", HeritageClassic = "Heritage Classic", FSAE = "Formula SAE", EVX = "Electric Vehicle Experimental", Supplemental, ClubSpec = "Club Spec", Spec
     
     var id: String {
         get {

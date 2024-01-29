@@ -54,16 +54,12 @@ let solo2024: [SoloClassGroup: [SoloClass: Double]] = [
         .DM: 0.904,
         .EM: 0.910,
         .FM: 0.917,
-    ],
-    .Kart: [
         .KM: 0.937,
     ],
-    .SoloSpecCoupe: [
-        .SSC: 0.805,
-    ],
-    .ClubSpec: [
+    .Spec: [
         .CSM: 0.808,
-        .CSX: 0.811
+        .CSX: 0.811,
+        .SSC: 0.805,
     ],
     .Supplemental: [
         .CAMC: 0.826,

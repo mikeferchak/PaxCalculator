@@ -21,21 +21,20 @@ struct ListView: View {
         let paxIndexValues = Dictionary(uniqueKeysWithValues: selectedIndex.map {key,value in value.compactMap{$0}}.flatMap{$0})
         let inputPax = paxIndexValues[inputClass] ?? 1.0
         
-//        ZStack {
-            List(groups) { group in
-                Section(group.rawValue) {
-                    let groupItems = (selectedIndex[group] ?? [:]).compactMap {$0}.sorted { $0.key.rawValue < $1.key.rawValue }
-                    ForEach(groupItems, id: \.key) {groupItem in
-                        let outputPax = groupItem.value
-                        let outputTime = inputTime * (inputPax / outputPax)
-                        let className = String(groupItem.key.rawValue)
-                        let isSelected = inputClass.rawValue == className
-                        
-                        ListRow(className: className, outputPax: outputPax, outputTime: outputTime, isSelected: isSelected).listRowBackground(isSelected ? Color.secondary.opacity(0.05) : nil)
-                    }
+        
+        List(groups) { group in
+            Section(group.rawValue) {
+                let groupItems = (selectedIndex[group] ?? [:]).compactMap {$0}.sorted { $0.key.rawValue < $1.key.rawValue }
+                ForEach(groupItems, id: \.key) {groupItem in
+                    let outputPax = groupItem.value
+                    let outputTime = inputTime * (inputPax / outputPax)
+                    let className = String(groupItem.key.rawValue)
+                    let isSelected = inputClass.rawValue == className
+                    
+                    ListRow(className: className, outputPax: outputPax, outputTime: outputTime, isSelected: isSelected).listRowBackground(isSelected ? Color.secondary.opacity(0.05) : nil)
                 }
-            }.listStyle(.plain)
-//        }
+            }
+        }.listStyle(.plain)
     }
 }
 
