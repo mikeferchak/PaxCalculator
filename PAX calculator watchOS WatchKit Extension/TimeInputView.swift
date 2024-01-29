@@ -33,7 +33,9 @@ struct TimeInputView: View {
                             .dynamicTypeSize(.small)
                     }
                 }
-                .onChange(of: seconds, perform: onChangeInputTime)
+                .onChange(of: seconds) { _, new in
+                    onChangeInputTime(new)
+                }
                 .labelsHidden()
                 
                 Text(".").dynamicTypeSize(.small)
@@ -44,7 +46,9 @@ struct TimeInputView: View {
                             .dynamicTypeSize(.small)
                     }
                 }
-                .onChange(of: tenths, perform: onChangeInputTime)
+                .onChange(of: tenths) { _, new in
+                    onChangeInputTime(new)
+                }
                 .labelsHidden()
                 
                 Picker("Hundredths", selection: $hundredths) {
@@ -53,7 +57,9 @@ struct TimeInputView: View {
                             .dynamicTypeSize(.small)
                     }
                 }
-                .onChange(of: hundredths, perform: onChangeInputTime)
+                .onChange(of: hundredths) { _, new in
+                    onChangeInputTime(new)
+                }
                 .labelsHidden()
                 
                 Picker("Thousandths", selection: $thousandths) {
@@ -62,7 +68,9 @@ struct TimeInputView: View {
                             .dynamicTypeSize(.small)
                     }
                 }
-                .onChange(of: thousandths, perform: onChangeInputTime)
+                .onChange(of: thousandths) {_, new in
+                    onChangeInputTime(new)
+                }
                 .labelsHidden()
             }
         }

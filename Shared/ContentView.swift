@@ -7,9 +7,12 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     @AppStorage("viewMode") var viewMode: ViewMode = .direct
     @AppStorage("indexType") var indexType: IndexType = .solo
+    @AppStorage("inputClass") var inputClass: SoloClass = .SSC
+    @AppStorage("outputClass") var outputClass: SoloClass = .DS
     
     var body: some View {
         NavigationView {
@@ -20,7 +23,6 @@ struct ContentView: View {
                     ListView()
                 }
             }
-            .navigationTitle("Calculator")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -42,6 +44,7 @@ struct ContentView: View {
                     }.foregroundColor(.primary)
                 }
             }
+            .toolbarBackground(.visible)
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
@@ -62,12 +65,23 @@ struct ContentView: View {
         } else {
             indexType = .solo
         }
+        
+        let selectedIndex = indexType == .solo ? solo2024 : proSolo2024
+        let paxIndexValues = Dictionary(uniqueKeysWithValues: selectedIndex.map {key,value in value.map{$0}}.flatMap{$0})
+        
+        if(paxIndexValues[inputClass] == nil) {
+            inputClass = .AM
+        }
+        if(paxIndexValues[outputClass] == nil) {
+            outputClass = .AM
+        }
     }
 }
 
 struct ScootImage: View {
     var body: some View {
-        Image(systemName: "scooter").dynamicTypeSize(.xSmall)
+        Image(systemName: "scooter")
+            .dynamicTypeSize(.xSmall)
             .foregroundColor(.secondary)
     }
 }

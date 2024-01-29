@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct PAXApp: App {
+struct PAXApp: App {    
     var body: some Scene {
         WindowGroup {
             ContentView()

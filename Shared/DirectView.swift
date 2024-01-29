@@ -17,9 +17,6 @@ struct DirectView: View {
     @AppStorage("outputClass") var outputClass: SoloClass = .DS
     @AppStorage("inputTimeString") private var inputTimeString = ""
     
-    @State var inputClassSelection: String = "SSC"
-    @State var outputClassSelection: String = "DS"
-    
     @FocusState private var focused: Bool
     
     var body: some View {
@@ -35,7 +32,6 @@ struct DirectView: View {
         let vTiny = verticalSizeClass == .compact
           
         VStack {
-            Divider()
             Spacer()
             HStack {
                 OutputTime(time: outputTime, selectedClass: outputClass, pax: outputPax, focused: $focused)
@@ -45,9 +41,6 @@ struct DirectView: View {
                             ForEach(sortedClasses, id: \.self) { sortedClass in
                                 Text(sortedClass.rawValue).tag(sortedClass)
                             }
-                        }
-                        .onChange(of: outputClass) { selection in
-                            self.outputClassSelection = selection.rawValue
                         }
                     }
                     label: {
@@ -64,13 +57,6 @@ struct DirectView: View {
                         }
                     }
                     .pickerStyle(.wheel)
-                    .onAppear {
-                        self.outputClassSelection = outputClass.rawValue
-                    }
-                    .onChange(of: outputClassSelection) { selection in
-                        let selectedClass = SoloClass.allCases.filter {$0.rawValue == selection}.first ?? SoloClass.AS
-                        self.outputClass = selectedClass
-                    }
                     .frame(minWidth: 100, idealWidth: 100, maxWidth: 120, alignment: .center)
                 }
             }
@@ -79,7 +65,8 @@ struct DirectView: View {
                 focused = false
             }
 
-            DiffView(inputClassSelection: $inputClassSelection, outputClassSelection: $outputClassSelection, outputTime: outputTime)
+            DiffView(outputTime: outputTime)
+            
             HStack {
                 InputTime(focused: $focused, inputPax: inputPax)
                 Spacer()
@@ -90,9 +77,6 @@ struct DirectView: View {
                                 Text(sortedClass.rawValue).tag(sortedClass)
                             }
                         }
-                        .onChange(of: inputClass) { selection in
-                            self.inputClassSelection = selection.rawValue
-                        }
                     }
                     label: {
                         Text(inputClass.rawValue)
@@ -102,19 +86,12 @@ struct DirectView: View {
                     }
                     .foregroundColor(.secondary)
                 } else {
-                    Picker("input", selection: $inputClassSelection) {
-                        ForEach(sortedClasses, id: \.rawValue) { sortedClass in
+                    Picker("input", selection: $inputClass) {
+                        ForEach(sortedClasses, id: \.self) { sortedClass in
                             Text(sortedClass.rawValue).tag(sortedClass)
                         }
                     }
                     .pickerStyle(.wheel)
-                    .onAppear {
-                        self.inputClassSelection = inputClass.rawValue
-                    }
-                    .onChange(of: inputClassSelection) { selection in
-                        let selectedClass = SoloClass.allCases.filter {$0.rawValue == selection}.first ?? SoloClass.AS
-                        self.inputClass = selectedClass
-                    }
                     .frame(minWidth: 100, idealWidth: 100, maxWidth: 120, alignment: .center)
                 }
             }
@@ -206,9 +183,6 @@ struct DiffView: View {
     @AppStorage("outputClass") var outputClass: SoloClass = .DS
     @AppStorage("inputTimeString") private var inputTimeString = ""
     
-    @Binding var inputClassSelection: String
-    @Binding var outputClassSelection: String
-    
     var outputTime: Double
     
     var body: some View {
@@ -223,17 +197,16 @@ struct DiffView: View {
                     .padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12))
                     .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30))
                     .onTapGesture(perform: {
+                        if(outputClass == inputClass) {
+                            return
+                        }
                         let _outputClass = outputClass
                         let _inputClass = inputClass
                         let _outputTime = outputTime
-                        let _inputClassSelection = inputClassSelection
-                        let _outputClassSelection = outputClassSelection
                         inputTimeString = String(format: "%.3f", _outputTime)
                         inputTime = _outputTime
                         inputClass = _outputClass
                         outputClass = _inputClass
-                        outputClassSelection = _inputClassSelection
-                        inputClassSelection = _outputClassSelection
                     })
                     .dynamicTypeSize(inputTimeString == "69.420" ? .xLarge : .xSmall)
             }

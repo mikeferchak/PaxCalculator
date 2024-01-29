@@ -21,9 +21,9 @@ struct ListView: View {
         let paxIndexValues = Dictionary(uniqueKeysWithValues: selectedIndex.map {key,value in value.compactMap{$0}}.flatMap{$0})
         let inputPax = paxIndexValues[inputClass] ?? 0.0
         
-        List() {
+        List {
             ForEach(groups) {group in
-                Section(group.rawValue) {
+                Section(header: Text(group.rawValue)) {
                     let groupItems = (selectedIndex[group] ?? [:]).compactMap {$0}.sorted { $0.key.rawValue < $1.key.rawValue }
                     ForEach(groupItems, id: \.key) {groupItem in
                         let outputPax = groupItem.value
@@ -36,25 +36,27 @@ struct ListView: View {
                 }
             }
             
-            
-            Button(action: toggleIndex) {
-                HStack() {
-                    Spacer()
-                    ScootImage()
-                    Text(indexType.rawValue).font(.headline)
-                    if(indexType == .proSolo) {
+            Section {
+                Button(action: toggleIndex) {
+                    HStack() {
+                        Spacer()
                         ScootImage()
+                        Text(indexType.rawValue).font(.headline)
+                        if(indexType == .proSolo) {
+                            ScootImage()
+                        }
+                        Spacer()
                     }
-                    Spacer()
-                }
-            }.foregroundColor(.primary)
+                }.foregroundColor(.primary)
+            }
+            
         }
+        .navigationTitle(indexType.rawValue)
         .onAppear {
             if let newInputTime = newInputTime {
                 inputTime = newInputTime
             }
         }
-        .navigationTitle(indexType.rawValue)
     }
     
     func toggleIndex() {

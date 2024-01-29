@@ -101,6 +101,7 @@
 		32D9B58727E3893300E5E555 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		32D9B58927E3893300E5E555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32D9B58C27E3893300E5E555 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		32DE41082B673FB100248EC2 /* PAX-calculator--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PAX-calculator--iOS--Info.plist"; sourceTree = "<group>"; };
 		32F4C12F278A544A006FFEE2 /* PAX calculator (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PAX calculator (iOS).entitlements"; sourceTree = "<group>"; };
 		32FA344529284A4200FCF8F7 /* Solo2023.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solo2023.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +166,7 @@
 		32C7DE77271F78C300FB17C2 = {
 			isa = PBXGroup;
 			children = (
+				32DE41082B673FB100248EC2 /* PAX-calculator--iOS--Info.plist */,
 				32F4C12F278A544A006FFEE2 /* PAX calculator (iOS).entitlements */,
 				32C7DE7C271F78C300FB17C2 /* Shared */,
 				32C7DE8B271F78C400FB17C2 /* macOS */,
@@ -527,7 +529,7 @@
 				DEVELOPMENT_TEAM = GPCTX783ZZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = "PAX-calculator--iOS--Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = PAX;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -535,12 +537,12 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2024.01.22;
+				MARKETING_VERSION = 2024.01.29;
 				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax;
 				PRODUCT_NAME = "PAX calculator";
@@ -564,7 +566,7 @@
 				DEVELOPMENT_TEAM = GPCTX783ZZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = "PAX-calculator--iOS--Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = PAX;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -572,12 +574,12 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2024.01.22;
+				MARKETING_VERSION = 2024.01.29;
 				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax;
 				PRODUCT_NAME = "PAX calculator";
@@ -611,7 +613,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2024.01.22;
+				MARKETING_VERSION = 2024.01.29;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp;
 				PRODUCT_NAME = PAX;
 				SDKROOT = watchos;
@@ -619,7 +621,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -644,7 +646,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2024.01.22;
+				MARKETING_VERSION = 2024.01.29;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp;
 				PRODUCT_NAME = PAX;
 				SDKROOT = watchos;
@@ -653,7 +655,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};

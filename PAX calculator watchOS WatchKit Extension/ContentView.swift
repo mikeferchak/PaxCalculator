@@ -25,6 +25,13 @@ struct ContentView: View {
         } else {
             indexType = .solo
         }
+        
+        let selectedIndex = indexType == .solo ? solo2024 : proSolo2024
+        let paxIndexValues = Dictionary(uniqueKeysWithValues: selectedIndex.map {key,value in value.map{$0}}.flatMap{$0})
+        
+        if(paxIndexValues[inputClass] == nil) {
+            inputClass = .AM
+        }
     }
 }
 
